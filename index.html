@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+
+    <title>FoodVilla</title>
+</head>
+<body>
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">FoodVilla</a>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="order-now-btn">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div> <!-- Overlay for better text readability -->
+    <div class="hero-content">
+        <h1 class="hero-title">Delicious Fast Food Delivered to Your Doorstep</h1>
+        <p class="hero-subtitle">Experience the best burgers, pizzas, and more!</p>
+        <a href="#" class="hero-button">Order Now</a>
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-filters">
+        <button class="filter-button" data-category="all">All</button>
+        <button class="filter-button" data-category="burgers">Burgers</button>
+        <button class="filter-button" data-category="pizzas">Pizzas</button>
+        <button class="filter-button" data-category="Non-veg">Non-veg</button>
+        <button class="filter-button" data-category="snakcs">Snakcs</button>
+    </div>
+    <div class="menu-container">
+        <!-- Menu Item 1 -->
+        <div class="menu-item" data-category="burgers">
+            <div class="menu-image" style="background-image: url('./amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg');"></div>
+            <div class="menu-info">
+                <h3 class="menu-title">Classic Burger</h3>
+                <p class="menu-description">Juicy beef patty with lettuce, tomato, and our special sauce.</p>
+                <span class="menu-price">$8.99</span>
+                <button class="menu-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item" data-category="pizzas">
+            <div class="menu-image" style="background-image: url('./Pizzaflour.jpeg');"></div>
+            <div class="menu-info">
+                <h3 class="menu-title">Cheese Pizza</h3>
+                <p class="menu-description">A cheesy delight topped with the freshest ingredients.</p>
+                <span class="menu-price">$12.99</span>
+                <button class="menu-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item" data-category="snakcs">
+            <div class="menu-image" style="background-image: url('./Premium\ Photo\ _\ Delicious\ hot\ dog\ on\ rustic\ wooden\ table\ AI\ generated\ Fast\ food\ Street\ food.jpeg');"></div>
+            <div class="menu-info">
+                <h3 class="menu-title">Hot Dog</h3>
+                <p class="menu-description">Savour hot dog with mustard and relish.</p>
+                <span class="menu-price">$12.99</span>
+                <button class="menu-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-item" data-category="snakcs">
+            <div class="menu-image" style="background-image: url('./Premium\ Photo\ _\ French\ fries\ with\ sauce\ on\ a\ plate\ on\ a\ dark\ background.jpeg');"></div>
+            <div class="menu-info">
+                <h3 class="menu-title">French Fries</h3>
+                <p class="menu-description">Crispy golden fries with a slide of ketchup.</p>
+                <span class="menu-price">$12.99</span>
+                <button class="menu-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 5 -->
+        <div class="menu-item" data-category="Non-veg">
+            <div class="menu-image" style="background-image: url('./Roasted\ chicken\ wings\ in\ barbecue\ sa\ featuring\ chicken\,\ bbq\,\ and\ food.jpeg');"></div>
+            <div class="menu-info">
+                <h3 class="menu-title">Chicken Wings</h3>
+                <p class="menu-description">Spicy Chicken wings with a slide of ranch.</p>
+                <span class="menu-price">$12.99</span>
+                <button class="menu-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 6 -->
+        <div class="menu-item" data-category="Drinks">
+            <div class="menu-image" style="background-image: url('./Pink\ milkshake\ with\ cream\,\ marshmall.jpeg');"></div>
+            <div class="menu-info">
+                <h3 class="menu-title">Milkshake</h3>
+                <p class="menu-description">Rich and creamy milkshake with your choice of flavor.</p>
+                <span class="menu-price">$12.99</span>
+                <button class="menu-button">Order Now</button>
+            </div>
+        </div>
+
+
+        <!-- Add more menu items similarly -->
+    </div>
+</section>
+
+
+<!-- Special Offer Section -->
+<section class="special-offer-section">
+    <h2 class="section-title">Special Offer</h2>
+    <div class="offer-container">
+        <!-- Offer Card 1 -->
+        <div class="offer-card">
+            <img src="Premium Vector _ Delicious burger and french fries.jpeg" alt="Offer 1" class="offer-image">
+            <div class="offer-details">
+                <h3 class="offer-title">50% Off All Burgers!</h3>
+                <p class="offer-description">Get half off on all our delicious burgers. Limited time only!</p>
+                <span class="offer-expiry">Expires in: <span id="countdown1"></span></span>
+                <button class="offer-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Offer Card 2 -->
+        <div class="offer-card">
+            <img src="./download (2).jpeg" alt="Offer 2" class="offer-image">
+            <div class="offer-details">
+                <h3 class="offer-title">Buy 1 Get 1 Free Pizza!</h3>
+                <p class="offer-description">Buy one pizza and get another one free. Don’t miss out!</p>
+                <span class="offer-expiry">Expires in: <span id="countdown2"></span></span>
+                <button class="offer-button">Order Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="testimonial-container swiper-container">
+        <!-- Swiper Wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card swiper-slide">
+                <img src="./IMG_9337.JPG" alt="Customer 1" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"The best fast food I’ve ever had! Great service and amazing quality."</p>
+                    <p class="testimonial-name">Amaan malik</p>
+                    <p class="testimonial-role">Food Enthusiast</p>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card swiper-slide">
+                <img src="./arman.jpeg" alt="Customer 2" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Absolutely fantastic! The burgers are out of this world."</p>
+                    <p class="testimonial-name">arman malik</p>
+                    <p class="testimonial-role">Restaurant Critic</p>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card swiper-slide">
+                <img src="./mahim.jpeg" alt="Customer 3" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"A delightful experience every time. Highly recommended!"</p>
+                    <p class="testimonial-name">Mahim malik</p>
+                    <p class="testimonial-role">Local Blogger</p>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out to us using the form below, or contact us through the following details:</p>
+            <p><strong>Email:</strong> info@foodvilla.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> H-block, abul fazal, New-delhi</p>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="map-container">
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14085.72666875796!2d77.28096394670357!3d28.523530309245046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce306d2bd3d7d%3A0x4c178b5b019e6f4d!2sOkhla%20Abul%20Fazal%20Enclave%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1633383565970!5m2!1sen!2sin" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Fast Food</h2>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fast Food. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script>
+        
+        const navMenu = document.querySelector('.nav-menu');
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.innerHTML = '&#9776;'; 
+    
+        
+        document.querySelector('.header .container').prepend(menuToggle);
+    
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+<script>
+    const heroButton = document.querySelector('.hero-button');
+    heroButton.addEventListener('click', () => {
+        heroButton.textContent = 'Processing...';
+        heroButton.style.backgroundColor = '#ccc';
+    });
+</script>
+<script>
+    // Parallax effect on scroll
+    window.addEventListener('scroll', () => {
+        const hero = document.querySelector('.hero');
+        let scrollPosition = window.scrollY;
+        hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+    });
+</script>
+<!-- Include this script at the end of your HTML body or in a separate JS file -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Countdown function
+        function startCountdown(id, endDate) {
+            const countdownElement = document.getElementById(id);
+            const endTime = new Date(endDate).getTime();
+    
+            const interval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+    
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "EXPIRED";
+                    return;
+                }
+    
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                countdownElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+            }, 1000);
+        }
+    
+        // Set countdown for each offer
+        startCountdown('countdown1', '2024-09-30T23:59:59');
+        startCountdown('countdown2', '2024-09-30T23:59:59');
+    });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                },
+                effect: 'fade',
+                speed: 1000,
+            });
+        });
+        </script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const form = document.getElementById('contact-form');
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault(); // Prevent the default form submission
+            
+                    // Extract form data
+                    const name = form.elements['name'].value;
+                    const email = form.elements['email'].value;
+                    const subject = form.elements['subject'].value;
+                    const message = form.elements['message'].value;
+            
+                    // Display form data in an alert (replace this with actual form handling)
+                    alert(`Message sent!\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+            
+                    // Clear the form
+                    form.reset();
+                });
+            });
+            </script>
+            
+
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>

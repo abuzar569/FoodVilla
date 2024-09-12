@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FoodVilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./about.css">
+      <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container1">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">FoodVilla</a>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#order" class="order-now-btn">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to FoodVilla, where we offer a delightful culinary experience with our range of delicious dishes. Our mission is to provide quality food with exceptional service, ensuring that every visit is memorable.</p>
+
+        <div class="team">
+            <!-- Owner Card -->
+            <div class="team-member owner">
+                <img src="./Abuzar.JPG" alt="Owner">
+                <h3>Abuzar Malik</h3>
+                <p>Owner & Founder</p>
+                <p>With over 20 years of experience in the food industry, Abuzar Malik has dedicated their life to creating the best dining experiences. Passionate about quality and innovation, Alex ensures every dish is made with care and excellence.</p>
+            </div>
+
+            <!-- Other Team Members -->
+            <div class="team-member">
+                <img src="./DSC_7993.JPG" alt="Team Member 1">
+                <h3>Mohd Amaan Malik</h3>
+                <p>Founder & CEO</p>
+                <p>Amaan Malik is the visionary behind FoodVilla. With a background in business management and a love for culinary arts, John brings a unique blend of skills to the table. He is dedicated to fostering a culture of innovation and excellence in every aspect of the restaurant.</p>
+            </div>
+            <div class="team-member">
+                <img src="./AbdulQadir.jpeg" alt="Team Member 2">
+                <h3>Abdul Qadir</h3>
+                <p>Head Chef</p>
+                <p>Abdul Qadir is the creative force in the kitchen, crafting menus that combine tradition with contemporary flair. Her passion for fresh ingredients and unique flavors has helped establish FoodVilla as a top destination for food lovers.</p>
+            </div>
+            <div class="team-member">
+                <img src="./Azharbhai.jpeg" alt="Team Member 3">
+                <h3>Azhar Malik</h3>
+                <p>Restaurant Manager</p>
+                <p>Azhar Malik is the operational heart of FoodVilla, ensuring smooth service and a welcoming atmosphere for all guests. With a keen eye for detail and a commitment to customer satisfaction, Mike is always on hand to make sure every visit is perfect.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>FoodVilla</h2>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Menu</a></li>
+                    <li><a href="./index.html">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" class="social-icon" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="social-icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-icon" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FoodVilla. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        const navMenu = document.querySelector('.nav-menu');
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.innerHTML = '&#9776;'; 
+    
+        
+        document.querySelector('.header .container').prepend(menuToggle);
+    
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
